@@ -1,14 +1,17 @@
 function resultado(){
     var x = parseInt(document.getElementById('edad').value);
     if (x>=60){
-        document.getElementById('resultado').innerHTML = "Marzo y Abril";
+        document.getElementById('fecha').innerHTML = "Marzo y Abril 2021";
     }else if (x>=50&&x<60){
-        document.getElementById('resultado').innerHTML = "Mayo";
+        document.getElementById('fecha').innerHTML = "Mayo 2021";
     }else if (x>=40&&x<50){
-        document.getElementById('resultado').innerHTML = "Junio";
+        document.getElementById('fecha').innerHTML = "Junio 2021";
     }else if (x>=30&&x<40){
-        document.getElementById('resultado').innerHTML = "Julio";
+        document.getElementById('fecha').innerHTML = "Julio 2021";
     }else{
-        document.getElementById('resultado').innerHTML = "Diciembre";
+        document.getElementById('fecha').innerHTML = "Agosto - Diciembre 2021";
     }
+
+    document.getElementById('resultado-txt').style.display = "block";
 }
+document.getElementById('btnResultado').addEventListener("click",resultado);

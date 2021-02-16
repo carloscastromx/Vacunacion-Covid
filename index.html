@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fecha de Vacunación COVID-19</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <div class="contenedor">
-        <h1>Fecha de Vacunación COVID-19</h1>
+     <link rel="stylesheet" href="css/styles.css">
+ </head>
+ <body>
+     <div class="contenedor">
+         <h1>Fecha de Vacunación COVID-19</h1>
         <div class="box">
-            <p class="instrucciones">Instrucciones: Ingresa tu edad en años cumplidos para determinar tu fecha de vacunación.</p>
-            <form>
+             <p class="instrucciones">Instrucciones: Ingresa tu edad en años cumplidos para determinar tu fecha de vacunación.</p>
+             <form>
                 <label for="edad">Edad</label>
                 <input id="edad" type="text" name="edad" placeholder="35" required>
                 <button id="btnResultado">Enviar</button>
-            </form>
+             </form>
             <p class="resultado" id="resultado-txt">Tu fecha estimada de vacunación es: <span id="fecha"></span></p>
-        </div>
-    </div>
+         </div>
+     </div>
     <script>
         document.getElementById('btnResultado').addEventListener("click",function(e){
             e.preventDefault();
         });
-    </script>
-    <script src="scripts/scripts.js"></script>
-</body>
+     </script>
+    <script src="js/scripts.js"></script>
+ </body>
 </html>
