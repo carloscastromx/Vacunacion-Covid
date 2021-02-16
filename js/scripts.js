@@ -11,6 +11,7 @@ function resultado(){
     }else{
         document.getElementById('fecha').innerHTML = "Agosto - Diciembre 2021";
     }
+
     document.getElementById('resultado-txt').style.display = "block";
 }
 document.getElementById('btnResultado').addEventListener("click",resultado);
